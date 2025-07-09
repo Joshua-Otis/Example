@@ -13,7 +13,7 @@ from sklearn.inspection import permutation_importance
 from groq import Groq
 
 #creates groq client
-client = Groq(api_key=st.secrets.get('GROQ_API_KEY')
+client = Groq(api_key=st.secrets.get('GROQ_API_KEY'))
 
 # Streamlit app configuration
 st.set_page_config(page_title="Stroke Prediction Dashboard", layout="wide")
