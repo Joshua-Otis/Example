@@ -10,6 +10,11 @@ import numpy as np
 from sklearn.linear_model import LogisticRegression
 from sklearn.inspection import permutation_importance
 
+from groq import Groq
+
+#creates groq client
+client = Groq(api_key=st.secrets.get('GROQ_API_KEY')
+
 # Streamlit app configuration
 st.set_page_config(page_title="Stroke Prediction Dashboard", layout="wide")
 st.title('Stroke Risk Assessment Dashboard')
